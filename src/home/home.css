@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at center, #111926, #0a0f1c);
+  color: white;
+  overflow-x: hidden; /* remove rolagem horizontal */
+}
+
+.home {
+  text-align: center;
+  padding: 60px 20px;
+  height: 100%;
+}
+
+.home img {
+  width: 200vh;           /* ocupa toda a largura do container */
+  height: auto;          /* mantém a proporção */
+  max-height: 600px;
+  object-fit: cover;
+  padding: 0;
+  display: block;
+}
+
+
+.main-title {
+  font-size: 32px;
+  color: #ff7a00; /* Laranja vibrante */
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  font-size: 16px;
+  color: #a8d2f0; /* Azul claro */
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: rgba(10, 15, 28, 0.9);
+  border: 1px solid #1f3b57;
+  border-radius: 8px;
+  padding: 2px;
+  color: white;
+  text-align: center; /* centraliza todo o conteúdo */
+}
+
+
+
+.card h2 {
+  color: #ff7a00;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #a8d2f0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+

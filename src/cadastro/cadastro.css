@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00d8ff;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.form-box h2 {
+  color: #f97316;
+  margin-bottom: 5px;
+  padding-left: 18px;
+}
+
+.subtitle {
+  color: #38bdf8;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  padding-left: 19px;
+}
+
+/* Estilo para inputs com ícones */
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #00d8ff;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+
+.icon {
+  margin-right: 8px;
+  color: #38bdf8;
+}
+
+.input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #94a3b8;
+}
+
+.user-type {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+.user-type label {
+  margin-bottom: 5px;
+}
+
+.select {
+  padding: 10px;
+  border: 1px solid #38bdf8;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.select option {
+  background-color: #1e293b;
+}
+
+.btn-cadastrar {
+  background-color: #f97316;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.btn-cadastrar:hover {
+  background-color: #fb923c;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 10px;
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
