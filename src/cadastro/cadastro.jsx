@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./cadastro.css";
 import { FaUser, FaEnvelope, FaLock, FaLightbulb } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export default function Cadastro() {
+  const [mensagem, setMensagem] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Aqui você colocaria sua lógica de envio (ex: fetch ou axios)
+    // Simulando sucesso no cadastro:
+    setMensagem("Cadastro realizado com sucesso!");
+
+    setTimeout(() => {
+      navigate("/login");
+    }, 2000);
+  };
+
   return (
     <div className="container">
-      <form className="form-box">
+      <form className="form-box" onSubmit={handleSubmit}>
         <h2>CADASTRO DE USUÁRIO</h2>
         <p className="subtitle">• central de comando da cidade inteligente</p>
 
@@ -43,7 +59,10 @@ export default function Cadastro() {
         </select>
 
         <button type="submit" className="btn-cadastrar">CADASTRAR</button>
-        <a href="#" className="login-link">Já tenho conta</a>
+        <p className="login-link" onClick={() => navigate("/login")}>Já tenho conta</p>
+
+
+        {mensagem && <p className="mensagem-sucesso">{mensagem}</p>}
       </form>
     </div>
   );
